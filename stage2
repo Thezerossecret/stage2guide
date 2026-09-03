@@ -1,0 +1,163 @@
+```html
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>راهنمای مرحله ۲</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #f1f8e8;
+            color: #173B2A;
+            font-family: Tahoma, Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 650px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 25px;
+        }
+
+        .guide {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 2.2;
+            text-align: right;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 28px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #173B2A;
+            color: #f1f8e8;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .button:hover {
+            opacity: 0.9;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .password-box {
+            margin-top: 25px;
+            padding: 25px;
+            border: 3px solid #173B2A;
+            border-radius: 15px;
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: 8px;
+        }
+
+        .title-small {
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>راهنمای مرحله ۲</h1>
+
+    <!-- راهنمای الف -->
+    <div id="guideA">
+
+        <div class="guide">
+            به کارت‌های حراست خوب دقت کن و آن‌ها را مانند پازل به هم وصل کن.
+            یک الگوی مشخص ترتیب کارت‌ها را نشان می‌دهد.
+            <br><br>
+            بعد از پیدا کردن ترتیب کارت‌ها، تمام اجزای کارت‌ها را بررسی کن.
+            <br><br>
+            رمز دوربین مدار بسته جایی میان آن‌ها پنهان شده است.
+        </div>
+
+        <button class="button" onclick="showGuideB()">
+            هنوز نتونستم! راهنمای دوم
+        </button>
+
+    </div>
+
+
+    <!-- راهنمای ب -->
+    <div id="guideB" class="hidden">
+
+        <div class="title-small">
+            راهنمای دوم
+        </div>
+
+        <div class="guide">
+            کد مورس را بخوان.
+            <br>
+            از دفترچه راهنما می‌توانی کمک بگیری.
+        </div>
+
+        <button class="button" onclick="showPassword()">
+            هنوز نتونستم! رمز نهایی را نشان بده
+        </button>
+
+    </div>
+
+
+    <!-- رمز نهایی -->
+    <div id="finalPassword" class="hidden">
+
+        <div class="title-small">
+            رمز مرحله ۲
+        </div>
+
+        <div class="password-box">
+            ۸۱۳۹
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    function showGuideB() {
+        document.getElementById("guideA").classList.add("hidden");
+        document.getElementById("guideB").classList.remove("hidden");
+    }
+
+    function showPassword() {
+        document.getElementById("guideB").classList.add("hidden");
+        document.getElementById("finalPassword").classList.remove("hidden");
+    }
+
+</script>
+
+</body>
+</html>
+```
