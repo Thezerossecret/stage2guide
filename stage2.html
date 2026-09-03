@@ -1,3 +1,8 @@
+
+### نسخه اصلاح‌شده
+
+برای اینکه اشتباه نشود، **کل محتوای `stage2.html` را پاک کن و این کد را جایگزینش کن**:
+
 ```html
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
@@ -13,7 +18,8 @@
             min-height: 100vh;
             background-color: #f1f8e8;
             color: #173B2A;
-            font-family: Tahoma, Arial, sans-serif;
+
+            font-family: "B Nazanin", "BNazanin", "IRNazanin", Tahoma, sans-serif;
 
             display: flex;
             justify-content: center;
@@ -30,55 +36,60 @@
         }
 
         h1 {
-            font-size: 32px;
-            font-weight: 900;
-            margin-bottom: 25px;
+            font-size: 38px;
+            font-weight: bold;
+            margin-bottom: 30px;
         }
 
         .guide {
-            font-size: 20px;
+            font-size: 25px;
             font-weight: bold;
-            line-height: 2.2;
+            line-height: 2;
             text-align: right;
             margin-bottom: 30px;
         }
 
         .button {
             display: inline-block;
-            padding: 14px 28px;
+            padding: 14px 30px;
             margin: 10px;
-            border: none;
+            border: 2px solid #173B2A;
             border-radius: 10px;
+
             background-color: #173B2A;
             color: #f1f8e8;
-            font-size: 18px;
+
+            font-family: "B Nazanin", "BNazanin", "IRNazanin", Tahoma, sans-serif;
+            font-size: 22px;
             font-weight: bold;
+
             cursor: pointer;
-            font-family: inherit;
         }
 
         .button:hover {
-            opacity: 0.9;
+            opacity: 0.88;
         }
 
         .hidden {
             display: none;
         }
 
+        .title-small {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
         .password-box {
             margin-top: 25px;
             padding: 25px;
+
             border: 3px solid #173B2A;
             border-radius: 15px;
-            font-size: 32px;
-            font-weight: 900;
-            letter-spacing: 8px;
-        }
 
-        .title-small {
-            font-size: 24px;
-            font-weight: 900;
-            margin-bottom: 20px;
+            font-size: 42px;
+            font-weight: bold;
+            letter-spacing: 8px;
         }
     </style>
 </head>
@@ -89,7 +100,6 @@
 
     <h1>راهنمای مرحله ۲</h1>
 
-    <!-- راهنمای الف -->
     <div id="guideA">
 
         <div class="guide">
@@ -107,8 +117,6 @@
 
     </div>
 
-
-    <!-- راهنمای ب -->
     <div id="guideB" class="hidden">
 
         <div class="title-small">
@@ -127,8 +135,6 @@
 
     </div>
 
-
-    <!-- رمز نهایی -->
     <div id="finalPassword" class="hidden">
 
         <div class="title-small">
@@ -142,7 +148,6 @@
     </div>
 
 </div>
-
 
 <script>
 
@@ -160,4 +165,3 @@
 
 </body>
 </html>
-```
