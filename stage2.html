@@ -16,7 +16,7 @@
       margin: 0;
       background: #f1f8e8;
       color: #173B2A;
-      font-family: "B Nazanin", "BNazanin", Tahoma, Arial, sans-serif;
+      font-family: "B Nazanin", "BNazanin", "IRNazanin", Tahoma, Arial, sans-serif;
       line-height: 2;
     }
 
@@ -49,14 +49,16 @@
       font-size: 18px;
     }
 
+    /* کادر اصلی */
     .card {
-      background: #ffffff;
-      border: 1px solid #c8dcbc;
+      background: #173B2A;
+      border: 1px solid #173B2A;
       border-radius: 16px;
       padding: 30px 26px;
-      box-shadow: 0 10px 30px rgba(23, 59, 42, 0.12);
+      box-shadow: 0 10px 30px rgba(23, 59, 42, 0.20);
     }
 
+    /* راهنماها */
     .guide {
       display: none;
     }
@@ -66,84 +68,102 @@
     }
 
     h2 {
-      font-size: 25px;
+      font-size: 27px;
       margin-top: 0;
-      color: #123524;
+      margin-bottom: 20px;
+      color: #f1f8e8;
     }
 
     p {
-      font-size: 20px;
+      font-size: 21px;
       margin: 18px 0;
-      color: #173B2A;
+      color: #f1f8e8;
     }
 
     strong {
-      color: #0E2B1D;
+      color: #ffffff;
     }
 
+    /* کادر تأکیدی */
     .highlight {
-      border-right: 4px solid #315C43;
+      border-right: 4px solid #f1f8e8;
       padding: 14px 18px;
       margin: 25px 0;
-      background: #f1f8e8;
+      background: #123524;
       border-radius: 8px;
-      color: #123524;
-      font-size: 20px;
+      color: #f1f8e8;
+      font-size: 21px;
       font-weight: bold;
     }
 
+    .highlight strong {
+      color: #ffffff;
+    }
+
+    /* کادر نکته */
     .note {
       margin-top: 30px;
       padding: 18px;
-      background: #e4f0d8;
+      background: #315C43;
       border-radius: 10px;
-      color: #173B2A;
-      font-size: 19px;
+      color: #f1f8e8;
+      font-size: 20px;
     }
 
+    .note strong {
+      color: #ffffff;
+    }
+
+    /* دکمه */
     .button-area {
       text-align: center;
       margin-top: 35px;
     }
 
     button {
-      border: none;
-      background: #173B2A;
-      color: #f1f8e8;
-      padding: 13px 26px;
+      border: 2px solid #f1f8e8;
+      background: #f1f8e8;
+      color: #173B2A;
+
+      padding: 13px 28px;
       border-radius: 10px;
+
       font-family: inherit;
       font-size: 20px;
       font-weight: bold;
+
       cursor: pointer;
-      transition: 0.2s ease;
+      transition: all 0.2s ease;
     }
 
     button:hover {
-      background: #123524;
+      background: #dcefd0;
       transform: translateY(-1px);
     }
 
+    /* کادر رمز نهایی */
     .final-password {
       text-align: center;
       margin-top: 25px;
-      padding: 20px;
-      border: 2px solid #315C43;
+      padding: 22px;
+
+      border: 2px solid #f1f8e8;
       border-radius: 12px;
-      background: #f1f8e8;
+
+      background: #123524;
     }
 
     .password-label {
-      font-size: 20px;
+      font-size: 21px;
       margin-bottom: 5px;
-      color: #315C43;
+      color: #dcefd0;
     }
 
     .password {
-      font-size: 40px;
+      font-size: 44px;
       font-weight: bold;
-      letter-spacing: 5px;
-      color: #0E2B1D;
+      letter-spacing: 6px;
+      color: #ffffff;
     }
 
     footer {
@@ -151,6 +171,41 @@
       margin-top: 40px;
       color: #315C43;
       font-size: 13px;
+    }
+
+    /* نمایش بهتر در موبایل */
+    @media (max-width: 600px) {
+
+      .container {
+        padding: 30px 16px;
+      }
+
+      .card {
+        padding: 25px 20px;
+      }
+
+      h1 {
+        font-size: 29px;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+
+      p,
+      .highlight,
+      .note {
+        font-size: 19px;
+      }
+
+      button {
+        font-size: 18px;
+        padding: 12px 20px;
+      }
+
+      .password {
+        font-size: 38px;
+      }
     }
   </style>
 
@@ -161,18 +216,37 @@
   <div class="container">
 
 ```
+<!-- سربرگ -->
 <div class="header">
-  <div class="number">THE ZERO SECRET</div>
-  <h1>راهنمای مرحله ۲</h1>
-  <div class="subtitle">راهنمای کشف رمز دوربین مدار بسته</div>
+
+  <div class="number">
+    THE ZERO SECRET
+  </div>
+
+  <h1>
+    راهنمای مرحله ۲
+  </h1>
+
+  <div class="subtitle">
+    راهنمای کشف رمز دوربین مدار بسته
+  </div>
+
 </div>
 
+
+<!-- کادر اصلی -->
 <div class="card">
 
+
+  <!-- ========================= -->
   <!-- راهنمای الف -->
+  <!-- ========================= -->
+
   <div id="guideA" class="guide active">
 
-    <h2>راهنمای الف</h2>
+    <h2>
+      راهنمای الف
+    </h2>
 
     <p>
       به <strong>کارت‌های حراست</strong> خوب دقت کن و آن‌ها را مانند پازل به هم وصل کن.
@@ -189,18 +263,25 @@
     </div>
 
     <div class="button-area">
+
       <button onclick="showGuide('guideB')">
         هنوز پیدا نکردم؛ راهنمای ب
       </button>
+
     </div>
 
   </div>
 
 
+  <!-- ========================= -->
   <!-- راهنمای ب -->
+  <!-- ========================= -->
+
   <div id="guideB" class="guide">
 
-    <h2>راهنمای ب</h2>
+    <h2>
+      راهنمای ب
+    </h2>
 
     <p>
       <strong>کد مورس را بخوان.</strong>
@@ -213,22 +294,32 @@
     </p>
 
     <div class="note">
-      🔎 این راهنما فقط یک قدم دیگر با رمز نهایی فاصله دارد.
+
+      🔎 <strong>حواست باشد</strong><br>
+      اطلاعات لازم برای کشف رمز در همین سرنخ‌ها پنهان شده است.
+
     </div>
 
     <div class="button-area">
+
       <button onclick="showGuide('guideC')">
         هنوز نتونستم؛ رمز نهایی را نشان بده
       </button>
+
     </div>
 
   </div>
 
 
+  <!-- ========================= -->
   <!-- رمز نهایی -->
+  <!-- ========================= -->
+
   <div id="guideC" class="guide">
 
-    <h2>رمز مرحله ۲</h2>
+    <h2>
+      رمز مرحله ۲
+    </h2>
 
     <p>
       اگر هنوز موفق به پیدا کردن رمز نشدی،
@@ -236,14 +327,24 @@
     </p>
 
     <div class="final-password">
-      <div class="password-label">رمز نهایی</div>
-      <div class="password">۸۱۳۹</div>
+
+      <div class="password-label">
+        رمز نهایی
+      </div>
+
+      <div class="password">
+        ۸۱۳۹
+      </div>
+
     </div>
 
   </div>
 
+
 </div>
 
+
+<!-- پاورقی -->
 <footer>
   THE ZERO SECRET
 </footer>
@@ -252,6 +353,7 @@
   </div>
 
   <script>
+
     function showGuide(id) {
 
       const guides = document.querySelectorAll(".guide");
@@ -266,7 +368,9 @@
         top: 0,
         behavior: "smooth"
       });
+
     }
+
   </script>
 
 </body>
